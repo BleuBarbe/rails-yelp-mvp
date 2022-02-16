@@ -1,0 +1,13 @@
+<h1>Editing Commentary</h1>
+
+<div class="container">
+    <%= simple_form_for [@restaurant, @review] do |f| %>
+
+        <%= f.input :content %>
+        <%= f.input :rating %>
+        <%= f.button :submit %>
+    <% end %>
+
+    <%# <%= link_to 'Show', @restaurant %> |
+    <%= link_to 'Back', restaurants_path %>
+</div>
